@@ -1,0 +1,30 @@
+{
+  "name": "aliabdalla/datagrid",
+  "description": "advanced datagrid for laravel",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "3li3bdalla",
+      "email": "ali.abdalla@anbit.io"
+    }
+  ],
+  "require": {},
+  "psr-4": {
+    "autoload": {
+      "psr-4": {
+        "AliAbdalla\\DataGrid\\": "src/"
+      }
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AliAbdalla\\DataGrid\\ServiceProvider"
+      ],
+      "aliases": {
+        "DataGrid": "AliAbdalla\\DataGrid\\Facade"
+      }
+    }
+  }
+}
